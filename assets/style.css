@@ -509,3 +509,149 @@ footer {
     font-size: 12px;
   }
 }
+
+/* ====================================
+   RESEARCH PAGE — COMPACT STYLE
+==================================== */
+
+/* Reduce page introduction spacing */
+
+.research-header {
+  margin-bottom: 12px;
+}
+
+.research-header h1 {
+  font-size: 38px;
+  margin: 0 0 4px;
+  line-height: 1.25;
+}
+
+.research-header p {
+  color: #657286;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Section headings */
+
+.working-papers h2,
+.research-progress h2 {
+  font-size: 23px;
+  margin-top: 22px;
+  margin-bottom: 18px;
+  padding-top: 13px;
+}
+
+/* Working paper spacing */
+
+.working-papers .paper {
+  padding-bottom: 14px;
+  margin-bottom: 19px;
+  border-bottom: 1px solid #e5e9ed;
+}
+
+/* Paper title */
+
+.working-papers .paper h3 {
+  font-size: 17px;
+  line-height: 1.45;
+  margin: 0 0 5px;
+  letter-spacing: -0.02em;
+}
+
+/* Authors */
+
+.working-papers .paper .muted {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 2px 0 3px;
+  color: #657286;
+}
+
+/* Working paper status */
+
+.working-papers .paper-status {
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 1px 0 3px;
+  color: #33485d;
+}
+
+/* Conference presentation information */
+
+.working-papers .conference {
+  font-size: 12px;
+  line-height: 1.55;
+  color: #87909c;
+  margin: 4px 0 0;
+  font-weight: 400;
+}
+
+/* Label slightly darker than the list */
+
+.conference-label {
+  font-weight: 600;
+  color: #737f8d;
+}
+
+/* Linked paper titles */
+
+.working-papers h3 a {
+  color: #172537;
+  text-decoration: none;
+}
+
+.working-papers h3 a:hover {
+  color: #214d73;
+  text-decoration: underline;
+}
+
+/* ====================================
+   RESEARCH IN PROGRESS
+==================================== */
+
+.progress-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.progress-list li {
+  font-size: 15px;
+  padding: 5px 0;
+  border-bottom: 1px solid #edf0f3;
+}
+
+.progress-list li:last-child {
+  border-bottom: none;
+}
+
+/* ====================================
+   MOBILE
+==================================== */
+
+@media (max-width: 650px) {
+
+  .research-header h1 {
+    font-size: 32px;
+  }
+
+  .research-header p {
+    font-size: 13px;
+  }
+
+  .working-papers h2,
+  .research-progress h2 {
+    margin-top: 18px;
+  }
+
+  .working-papers .paper h3 {
+    font-size: 16px;
+  }
+
+  .working-papers .conference {
+    font-size: 12px;
+    line-height: 1.55;
+  }
+}
