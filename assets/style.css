@@ -435,3 +435,77 @@ footer {
     max-height: none;
   }
 }
+
+/* Compact academic CV-style grants */
+
+.grants-section {
+  margin-top: 30px;
+}
+
+.grants-section h2 {
+  margin-bottom: 22px;
+}
+
+.grant-entry {
+  display: grid;
+  grid-template-columns: 90px minmax(0, 1fr);
+  column-gap: 22px;
+  padding: 0 0 13px;
+  margin-bottom: 13px;
+  border-bottom: 1px solid #edf0f3;
+  align-items: start;
+}
+
+.grant-entry:last-child {
+  border-bottom: none;
+}
+
+.grant-year {
+  font-size: 14px;
+  font-weight: 600;
+  color: #657286;
+  line-height: 1.55;
+}
+
+.grant-details {
+  min-width: 0;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.grant-details strong {
+  font-weight: 600;
+  color: #172537;
+}
+
+.grant-description {
+  margin-top: 3px;
+  color: #394b60;
+}
+
+.grant-meta {
+  margin-top: 3px;
+  font-size: 13px;
+  color: #657286;
+}
+
+/* Mobile adjustments */
+
+@media (max-width: 650px) {
+  .grant-entry {
+    grid-template-columns: 72px minmax(0, 1fr);
+    column-gap: 15px;
+  }
+
+  .grant-year {
+    font-size: 13px;
+  }
+
+  .grant-details {
+    font-size: 13px;
+  }
+
+  .grant-meta {
+    font-size: 12px;
+  }
+}
