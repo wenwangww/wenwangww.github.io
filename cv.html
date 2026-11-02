@@ -3,21 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Curriculum vitae of Wen Wang, Assistant Professor of Social Science at HKUST.">
+  <meta name="description" content="Curriculum vitae, research grants, awards, and education of Wen Wang, Assistant Professor at HKUST.">
   <title>Curriculum Vitae | Wen Wang</title>
-  <link rel="canonical" href="https://wenwangeconomics.com/cv.html">
-  <link rel="stylesheet" href="assets/style.css?v=8">
+  <link href="assets/style.css?v=8" rel="stylesheet">
+  <link href="https://wenwangeconomics.com/cv.html" rel="canonical">
   <style>
-    /* CV-specific styles; other site pages are unaffected. */
-    .cv-intro { margin: 25px 0 24px; }
-    .cv-intro h1 { margin: 0 0 9px; }
-    .cv-intro p { max-width: 680px; color: #657286; margin: 0; line-height: 1.65; }
-    .cv-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 22px; margin: 22px 0; }
-    .cv-actions a { font-size: 14px; color: #214d73; text-decoration: underline; text-underline-offset: 3px; }
-    .cv-preview { border: 1px solid #e1e6eb; border-radius: 3px; overflow: hidden; background: #f3f5f7; }
-    .cv-preview iframe { display: block; width: 100%; height: min(1120px, 85vh); min-height: 600px; border: 0; }
-    .cv-note { font-size: 13px; line-height: 1.6; color: #657286; margin: 13px 0 34px; }
-    @media (max-width: 650px) { .cv-preview iframe { min-height: 480px; height: 70vh; } }
+    /* Styles scoped to this page; no changes to the shared stylesheet needed. */
+    .cv-intro { margin-bottom: 24px; }
+    .cv-intro p { margin: 8px 0 14px; color: #657286; line-height: 1.65; }
+    .cv-pdf-link { display: inline-flex; align-items: center; gap: 7px; font-weight: 600; color: #214d73; text-decoration: none; border-bottom: 1px solid #b1c5d4; padding-bottom: 2px; }
+    .cv-pdf-link:hover { border-bottom-color: currentColor; }
+    .cv-grants { margin-top: 31px; }
+    .cv-grants h2, .cv-education h2 { margin-bottom: 19px; }
+    .cv-grants .grant-entry { display: grid; grid-template-columns: 94px minmax(0,1fr); column-gap: 20px; padding: 0 0 13px; margin-bottom: 13px; border-bottom: 1px solid #edf0f3; align-items: start; }
+    .cv-grants .grant-entry:last-child { border-bottom: none; }
+    .cv-grants .grant-year { font-size: 14px; font-weight: 600; line-height: 1.55; color: #657286; }
+    .cv-grants .grant-details { font-size: 14px; line-height: 1.6; min-width: 0; }
+    .cv-grants .grant-details strong { color: #172537; font-weight: 600; }
+    .cv-grants .grant-description { margin-top: 3px; color: #394b60; }
+    .cv-grants .grant-meta { margin-top: 3px; font-size: 13px; color: #657286; }
+    .cv-education { margin-top: 29px; }
+    .cv-education p { margin: 0 0 8px; line-height: 1.65; }
+    @media(max-width:650px) { .cv-grants .grant-entry { grid-template-columns: 76px minmax(0,1fr); column-gap: 14px; } }
   </style>
 </head>
 <body>
@@ -33,22 +40,51 @@
       </nav>
     </div>
   </header>
+
   <main class="wrap">
-    <section class="cv-intro">
+    <div class="cv-intro">
       <h1>Curriculum Vitae</h1>
-      <p>My current academic CV, including publications, working papers, research grants, teaching, and academic service.</p>
-      <div class="cv-actions">
-        <a href="Wen_Wang_CV_public.pdf" target="_blank" rel="noopener noreferrer">View CV (PDF) ↗</a>
-        <a href="Wen_Wang_CV_public.pdf" download>Download CV (PDF) ↓</a>
+      <p>My current academic CV is available as a PDF.</p>
+      <a class="cv-pdf-link" href="Wen_Wang_CV_public.pdf" target="_blank" rel="noopener noreferrer" aria-label="View or download curriculum vitae PDF in a new tab">View / Download CV (PDF) ↗</a>
+    </div>
+
+    <section class="cv-grants" aria-labelledby="grants-heading">
+      <h2 id="grants-heading">Research Grants &amp; Awards</h2>
+      <div class="grant-entry">
+        <div class="grant-year">2026</div>
+        <div class="grant-details"><strong>DDF-SHSS Pilot Study Grant</strong><div class="grant-meta">PI · SHSS26HS11 · HKD 100,000</div></div>
+      </div>
+      <div class="grant-entry">
+        <div class="grant-year">2024</div>
+        <div class="grant-details"><strong>General Research Fund (GRF)</strong><div class="grant-description">Crafting the Soundscape of the Future: Economic Impacts of Traffic Road Noise</div><div class="grant-meta">HKD 250,000</div></div>
+      </div>
+      <div class="grant-entry">
+        <div class="grant-year">2024</div>
+        <div class="grant-details"><strong>Institute for Emerging Market Studies (IEMS) Research Grant</strong><div class="grant-meta">PI · HKD 80,000</div></div>
+      </div>
+      <div class="grant-entry">
+        <div class="grant-year">2022</div>
+        <div class="grant-details"><strong>Junior Faculty Fellowship</strong><div class="grant-description">Fired Up or Burned Down: Wildfires and VC Investment</div><div class="grant-meta">With Tianjiao Tong · CAD 25,000</div></div>
+      </div>
+      <div class="grant-entry">
+        <div class="grant-year">2019</div>
+        <div class="grant-details"><strong>Duke Support for Interdisciplinary Graduate Networks (D-SIGN) Grant</strong><div class="grant-meta">Duke University</div></div>
+      </div>
+      <div class="grant-entry">
+        <div class="grant-year">2015–2016</div>
+        <div class="grant-details"><strong>Environmental Economics Doctoral Scholars (DEEDS)</strong><div class="grant-meta">Duke University</div></div>
       </div>
     </section>
-    <section aria-label="CV preview" class="cv-preview">
-      <iframe src="Wen_Wang_CV_public.pdf#view=FitH" title="Wen Wang curriculum vitae PDF" loading="lazy">
-        <p>Your browser cannot display the PDF here. <a href="Wen_Wang_CV_public.pdf">Open the CV as a PDF</a>.</p>
-      </iframe>
+
+    <section class="cv-education" aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
+      <p>Ph.D. in Economics, Duke University (2020)</p>
+      <p>M.A. in Economics, Renmin University of China (2014)</p>
+      <p>B.A. in Economics, Shandong University (2011)</p>
     </section>
-    <p class="cv-note">If the preview does not display on your device, use “View CV (PDF)” above.</p>
   </main>
-  <footer><div class="wrap">&copy; Wen Wang &middot; Division of Social Science, HKUST &middot; <a href="mailto:wenwangww@ust.hk">wenwangww@ust.hk</a></div></footer>
+  <footer>
+    <div class="wrap">&copy; Wen Wang &middot; Division of Social Science, HKUST &middot; <a href="mailto:wenwangww@ust.hk">wenwangww@ust.hk</a></div>
+  </footer>
 </body>
 </html>
